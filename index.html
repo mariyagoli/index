@@ -2,15 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">  
-        <title>HW - HTML</tittle>
+        <title>HW - HTML</title>
     </head>
     <body>
+        <h1>Homework #2</h1>
     <table>
         <tr>
-            <td>Name</td>
-            <td>Surname</td>
-            <td>Number</td>
-            <td>E-mail></td>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Number</th>
+            <th>E-mail></th>
         </tr>
         <tr>
            <td>Eugene</td>
@@ -32,11 +33,14 @@
             <td>ghnf@gmail.com</td>
         </tr>
     </table>
-    <div>
-    <input type="text" id="Add your name" name="Add your name"/>
-    <input type="text" id="Add your surname" name="Add your surname"/> 
-    </div>
-<form>
+    <form>
+    <p>
+    <input type="text"placeholder="Add your name" id="name" name="add your name">
+    </p>
+    <p>
+    <input type="text" placeholder="Add your Surname" id=surname name="add your surname">
+    </p>
+    
     <p>Choose your gender:</p>
 <div>
         <input type="radio" id="male" name="gender" value="male"
@@ -50,30 +54,27 @@
 <div>
     <button type="submit">Submit</button>
 </div>
-</form>
-<textarea id="question" name="question" rows="5"  colls="33">
-    Write your question...
+<textarea placeholder ="Write your question..." id="question" name="question" rows="5"  colls="15">
 </textarea>
+<div>
 <label for="city-select">Choose a city</label>
 <select name disabled="city" id="city-select">
-   <option value="">--Please choose the option""--</option>
+   <option value="">--Please choose""--</option>
    <option value="kyiv">Kyiv</option>
    <option value="odesa">Odesa</option>
    <option value="lviv">Lviv</option>
    <option value="dnipro">Dnipro</option>
    <option value="kharkiv">Kharkiv</option>
-<p>Choose a languege</p>
-<div>
-<input type="checkbox" id="russian" name="russian"/>
-<label for="russian">Russian</label>
 </div>
 <div>
-    <input type="checkbox" id="ukranian" name="ukrainian"/>
-    <label for="ukrainian">Ukranian</label>
-</div>
-<div>
-    <input type="checkbox" id="english" name="english"/>
-    <label for="english">English</label>
-</div>
+    <p><input type="checkbox" id="rus" name="russian"/>
+    <label for="rus">Russian</label></p>
+    <p><input type="checkbox" id="ukr" name="ukrainian"/>
+    <label for="ukr">Ukranian</label></p>
+    <p> <input type="checkbox" id="eng" name="english" checked/>
+    <label for="eng">English</label> </p>
+    <input type="submit" value="Send">
+    </div>
+    </form>
 </body>
 </html>
