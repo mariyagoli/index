@@ -51,26 +51,26 @@
     <input type="radio" id="female"name="gender"/>
     <label for="female">Female</label>
 </div>
-<div>
-    <button type="submit">Submit</button>
-</div>
 <textarea placeholder ="Write your question..." id="question" name="question" rows="5"  colls="15">
 </textarea>
-<p><label for="city-select">Choose a city</label></p>
-<select name ="city" id="city-select"></select>
+<div>
+<select name ="city">
    <option value="choose a city" selected disabled>Choose a city</option>
    <option value ="kyiv">Kyiv</option>
    <option value ="odesa">Odesa</option>
    <option value ="lviv">Lviv</option>
    <option value ="dnipro">Dnipro</option>
    <option value ="kharkiv">Kharkiv</option>
+   </select>
+   <p>Choose the language:</p>
    <p> <input type="checkbox" id="rus" name="russian"/>
     <label for="rus">Russian</label> </p>
-    <p>  <input type="checkbox" id="ukr" name="ukrainian"/>
+    <p> <input type="checkbox" id="ukr" name="ukrainian"/>
     <label for="ukr">Ukranian</label> </p>
     <p> <input type="checkbox" id="eng" name="english" checked/>
     <label for="eng">English</label> </p>
     <input type="submit" value="Send">
+</div>
 </form>
 </body>
 </html>
